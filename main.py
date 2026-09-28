@@ -1,0 +1,9 @@
+import urllib.request
+import os
+
+url = "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task"
+save_path = r"C:\GestureFlow\hand_landmarker.task"
+
+print("Downloading model file...")
+urllib.request.urlretrieve(url, save_path)
+print("SUCCESS! File saved to C:\\GestureFlow\\hand_landmarker.task")
